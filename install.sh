@@ -62,6 +62,8 @@ if ! grep -q '\.opencode/bin' "$HOME/.bashrc" 2>/dev/null; then
 fi
 
 echo ""
+"$INSTALL_DIR/opencode" service set disabled true || true
+
 echo "All done! Run these two commands to start:"
 echo "  source ~/.bashrc"
 echo "  opencode"
